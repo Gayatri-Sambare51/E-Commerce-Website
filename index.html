@@ -1,375 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  
-  <title>Shop Sell</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Shop Sell</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="head">
-    <div class="head1">
-      <div class="header">
-        Paradise
-      </div>
-      <div class="header">
-        <input type="text" id="search" width="200px" height="30px" placeholder="Try Saree Kurti or Search here"
-          size="29px">
-      </div>
-    </div>
-    <div class="head2">
-
-      <div class="header">
-
-        Become A Supplier &nbsp; &nbsp; &nbsp;
-
-      </div>
-
-      <!--<div class="header">
+    <div class="head">
+        <div class="head1">
+            <div class="header">
+                Paradise
+            </div>
+            <div class="header">
+                    <input type="text" id="search" width="200px" height="30px" placeholder="Try Saree Kurti or Search here" size="29px">
+            </div> 
+        </div>
+        <div class="head2">
+        
+            <div class="header">
+                
+               Become A Supplier  &nbsp; &nbsp; &nbsp;
+               
+            </div>
+           
+            <!--<div class="header">
                 Become A Supplier &nbsp;
              </div>-->
-      <div class="header">
-        <button style="font-size:24px">Profile &nbsp; <i class="fa fa-user"></i></button>
-      </div>
-      <div class="header">
-        <button style="font-size:24px">Cart &nbsp; <i class="fa fa-shopping-cart"></i></button>
-      </div>
+            <div class="header">
+                <button style="font-size:24px">Profile &nbsp; <i class="fa fa-user"></i></button>
+            </div>
+            <div class="header">
+                <button style="font-size:24px">Cart &nbsp; <i class="fa fa-shopping-cart"></i></button>
+            </div> 
+        </div>  
     </div>
+
+    <hr>  
+    <div class="dropdown">
+  <button onclick="myFunction1()" class="dropbtn">Women Western</button>
+  <button onclick="myFunction2()" class="dropbtn">Kids </button>
+  <button onclick="myFunction3()" class="dropbtn">Men</button>
+  <button onclick="myFunction4()" class="dropbtn">Beauty & Health</button>
+  <button onclick="myFunction5()" class="dropbtn">Sarees</button>
+  <button onclick="myFunction6()" class="dropbtn">Home & Kitchen</button>
+  <button onclick="myFunction7()" class="dropbtn">Jwellary</button>
+
+  <div id="myDropdown1" class="dropdown-content1">
+    <a href="#dress">Dresses</a>
+    <a href="#tops">Tops</a>
+    <a href="#Sweaters">Sweaters</a>
+    <a href="#jeans">Jeans</a>
+    <a href="#plazzos">Plazzos</a>
+    <a href="#skirts">Skirts</a>
   </div>
-  <div id = "navBar">
-    <ul class="NavBar">
-	    <li class="NavBarList" id="westernWomen">
-		Western Women
-		<div class="content" id="westernWomenContent">
-      <a href="#dress">Dresses</a>
-      <a href="#tops">Tops</a>
-      <a href="#Sweaters">Sweaters</a>
-      <a href="#jeans">Jeans</a>
-      <a href="#plazzos">Plazzos</a>
-      <a href="#skirts">Skirts</a>
-		</div>
-	    </li>
-	    <li class="NavBarList" id="kids">
-		Kids
-		<div class="content" id="kidsContent">
-      <a href="#toys">Soft Toys</a>
-      <a href="#dresses">Dresses</a>
-      <a href="#footwear">Footwear</a>
-		</div>
-	    </li>
-      <li class="NavBarList" id="men">
-        Men
-        <div class="content" id="mensContent">
-          <a href="#tshirts">Tshirts & Shirts</a>
-          <a href="#jeans">Jeans</a>
-          <a href="#trousers">Trousers</a>
-          <a href="#kurtas">Men Kurtas</a>
-          <a href="#track_pants">Track Pants</a>
-        </div>
-      </li>
 
-      <li class="NavBarList" id="beautyHealth">
-        Beauty & Health
-        <div class="content" id="beautyHealthContent">
-          <a href="#Face">Face </a>
-          <a href="#eyes">Eyes</a>
-          <a href="#lips">Lips</a>
-          <a href="#nails">Nails</a>
-          <a href="#sanitizers">Sanitizers</a> 
-        </div>
-      </li>
-      <li class="NavBarList" id="sarees">
-        Sarees
-        <div class="content" id="sareesContent">
-          <a href="#paithni">Paithni</a>
-          <a href="#kohlapuri">Kolhapuri Saree</a>
-          <a href="#designer_saree">Designer Saree</a>
-          <a href="#party_wear">Party Wear</a>
-        </div>
-      </li>
-
-
-      <li class="NavBarList" id="homeKitchen">
-        Home & Kitchen
-        <div class="content" id="homeKitchenContent">
-
-          <a href="#bedsheets">Bedsheets</a>
-          <a href="#doormats">Doormats</a>
-          <a href="#curtains">Curtains</a>
-        </div>
-      </li>
-      <li class="NavBarList" id="jwellery">
-        Jwellery
-        <div class="content" id="jwelleryContent">
-          <a href="#neckles">Neckles</a>
-          <a href="#rings">Rings</a>
-          <a href="#bangles">Bangles</a>
-          <a href="#earrings">Earrings</a>
-        </div>
-      </li>
-
-      <li class="NavBarList" id="electronics">
-        Electronics
-        <div class="content" id="electronicsContent">
-          <a href="#mobiles">Mobile</a>
-          <a href="#laptops">Laptop</a>
-          <a href="#cameras">Camera</a>
-        </div>
-      </li>
-	</ul>
+  <div id="myDropdown2" class="dropdown-content2">
+    <a href="#toys">Soft Toys</a>
+    <a href="#dresses">Dresses</a>
+    <a href="#footwear">Footwear</a>
   </div>
+
+  <div id="myDropdown3" class="dropdown-content3">
+    <a href="#tshirts">Tshirts & Shirts</a>
+    <a href="#jeans">Jeans</a>
+    <a href="#trousers">Trousers</a>
+    <a href="#kurtas">Men Kurtas</a>
+    <a href="#track_pants">Track Pants</a>
+  </div>
+
+  <div id="myDropdown4" class="dropdown-content4">
+    <a href="#Face">Face </a>
+    <a href="#eyes">Eyes</a>
+    <a href="#lips">Lips</a>
+    <a href="#nails">Nails</a>
+    <a href="#sanitizers">Sanitizers</a>
+  </div>
+
+  <div id="myDropdown5" class="dropdown-content5">
+    <a href="#paithni">Paithni</a>
+    <a href="#kohlapuri">Kolhapuri Saree</a>
+    <a href="#designer_saree">Designer Saree</a>
+    <a href="#party_wear">Party Wear</a>
+  </div>
+
+  <div id="myDropdown6" class="dropdown-content6">
+    <a href="#bedsheets">Bedsheets</a>
+    <a href="#doormats">Doormats</a>
+    <a href="#curtains">Curtains</a>
+  </div>
+
+  <div id="myDropdown7" class="dropdown-content7">
+    <a href="#neckles">Neckles</a>
+    <a href="#rings">Rings</a>
+    <a href="#bangles">Bangles</a>
+    <a href="#earrings">Earrings</a>
+  </div>
+<script>
+    /* When the user clicks on the button, 
+    toggle between hiding and showing the dropdown content */
+    function myFunction1() {
+      document.getElementById("myDropdown1").classList.toggle("show");
+    }
+    function myFunction2() {
+      document.getElementById("myDropdown2").classList.toggle("show");
+    }
+    function myFunction3() {
+      document.getElementById("myDropdown3").classList.toggle("show");
+    }
+    function myFunction4() {
+      document.getElementById("myDropdown4").classList.toggle("show");
+    }
+    function myFunction5() {
+      document.getElementById("myDropdown5").classList.toggle("show");
+    }
+    function myFunction6() {
+      document.getElementById("myDropdown6").classList.toggle("show");
+    }
+    function myFunction7() {
+      document.getElementById("myDropdown7").classList.toggle("show");
+    }
     
- 
-  <br><br><br><br>
- 
-    <div class="products">
-      <table>
-        <tbody>
-          <tr id="products-row">
-            <td>
-              <div class="product">
-                <img src="./img/saree1.jpeg" alt="Please Refresh">
-                <p>Kanjivaram Cotton Silk </p>
-                <p style="color:black;">$ 300</p>
-                <p>Free Delivery</p>
-                <div id="rating">
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star"></span>
-                  <span class="fa fa-star"></span>
-                </div>
-              </div>
-            </td>
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content1");
+    var dropdowns = document.getElementsByClassName("dropdown-content2");
+    var dropdowns = document.getElementsByClassName("dropdown-content3");
+    var dropdowns = document.getElementsByClassName("dropdown-content4");
+    var dropdowns = document.getElementsByClassName("dropdown-content5");
+    var dropdowns = document.getElementsByClassName("dropdown-content6");
+    var dropdowns = document.getElementsByClassName("dropdown-content7");
 
-            <td>
-              <div class="product">
-                <img src="./img/saree2.jpeg" alt="Please Refresh">
-                <p>Self Design Pure Silk Saree</p>
-                <p style="color:black;">$ 420</p>
-                <p>Free Delivery</p>
-                <div id="rating">
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star"></span>
-                  <span class="fa fa-star"></span>
-                </div>
-              </div>
-            </td>
-            <td>
-              <div class="product">
-                <img src="./img/saree3.jpeg" alt="Please Refresh">
-                <p>Banarsi Silk Saree</p>
-                <p style="color:black;">$ 650</p>
-                <p>Free Delivery</p>
-                <div id="rating">
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                </div>
-              </div>
-            </td>
-            <td>
-              <div class="product">
-                <img src="./img/saree4.jpeg" alt="Please Refresh">
-                <p>Embroidered Silk Saree</p>
-                <p style="color:black;">$ 500</p>
-                <p>Free Delivery</p>
-                <div id="rating">
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star"></span>
-                </div>
-              </div>
-            </td>
-            <td>
-              <div class="product">
-                <img src="./img/saree4.jpeg" alt="Please Refresh">
-                <p>Embroidered Silk Saree</p>
-                <p style="color:black;">$ 500</p>
-                <p>Free Delivery</p>
-                <div id="rating">
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star"></span>
-                </div>
-              </div>
-            </td>
-          </tr>
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
 
-          <tr>
-            <td>
-              <div class="product">
-                <img src="./img/saree1.jpeg" alt="Please Refresh">
-                <p>Kanjivaram Cotton Silk </p>
-                <p style="color:black;">$ 300</p>
-                <p>Free Delivery</p>
-                <div id="rating">
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star"></span>
-                  <span class="fa fa-star"></span>
-                </div>
-              </div>
-            </td>
-
-            <td>
-              <div class="product">
-                <img src="./img/saree2.jpeg" alt="Please Refresh">
-                <p>Self Design Pure Silk Saree</p>
-                <p style="color:black;">$ 420</p>
-                <p>Free Delivery</p>
-                <div id="rating">
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star"></span>
-                  <span class="fa fa-star"></span>
-                </div>
-              </div>
-            </td>
-            <td>
-              <div class="product">
-                <img src="./img/saree3.jpeg" alt="Please Refresh">
-                <p>Banarsi Silk Saree</p>
-                <p style="color:black;">$ 650</p>
-                <p>Free Delivery</p>
-                <div id="rating">
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                </div>
-              </div>
-            </td>
-            <td>
-              <div class="product">
-                <img src="./img/saree4.jpeg" alt="Please Refresh">
-                <p>Embroidered Silk Saree</p>
-                <p style="color:black;">$ 500</p>
-                <p>Free Delivery</p>
-                <div id="rating">
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star"></span>
-                </div>
-              </div>
-            </td>
-            <td>
-              <div class="product">
-                <img src="./img/saree4.jpeg" alt="Please Refresh">
-                <p>Embroidered Silk Saree</p>
-                <p style="color:black;">$ 500</p>
-                <p>Free Delivery</p>
-                <div id="rating">
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star"></span>
-                </div>
-              </div>
-            </td>
-          </tr>
-
-          <tr>
-            <td>
-              <div class="product">
-                <img src="./img/saree1.jpeg" alt="Please Refresh">
-                <p>Kanjivaram Cotton Silk </p>
-                <p style="color:black;">$ 300</p>
-                <p>Free Delivery</p>
-                <div id="rating">
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star"></span>
-                  <span class="fa fa-star"></span>
-                </div>
-              </div>
-            </td>
-
-            <td>
-              <div class="product">
-                <img src="./img/saree2.jpeg" alt="Please Refresh">
-                <p>Self Design Pure Silk Saree</p>
-                <p style="color:black;">$ 420</p>
-                <p>Free Delivery</p>
-                <div id="rating">
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star"></span>
-                  <span class="fa fa-star"></span>
-                </div>
-              </div>
-            </td>
-            <td>
-              <div class="product">
-                <img src="./img/saree3.jpeg" alt="Please Refresh">
-                <p>Banarsi Silk Saree</p>
-                <p style="color:black;">$ 650</p>
-                <p>Free Delivery</p>
-                <div id="rating">
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                </div>
-              </div>
-            </td>
-            <td>
-              <div class="product">
-                <img src="./img/saree4.jpeg" alt="Please Refresh">
-                <p>Embroidered Silk Saree</p>
-                <p style="color:black;">$ 500</p>
-                <p>Free Delivery</p>
-                <div id="rating">
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star"></span>
-                </div>
-              </div>
-            </td>
-            <td>
-              <div class="product">
-                <img src="./img/saree4.jpeg" alt="Please Refresh">
-                <p>Embroidered Silk Saree</p>
-                <p style="color:black;">$ 500</p>
-                <p>Free Delivery</p>
-                <div id="rating">
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star"></span>
-                </div>
-              </div>
-            </td>
-          </tr>
-
-        
-        </tbody>
-      </table>
- 
+    </script>
+    <hr>
+    <div class="img1">
+      <img src="front.jpeg" alt="Image can't Load">
     </div>
-
+    <div class="para">
+      <h3> Top catogaries to choose from</h3>
+    </div>
+    <div class="img2">
+      <img src="front.jpeg" alt="Image can't Load">
+    </div>
+    <div class="img3">
+      <img src="front.jpeg" alt="Image can't Load">
+    </div>
 </body>
-
 </html>
